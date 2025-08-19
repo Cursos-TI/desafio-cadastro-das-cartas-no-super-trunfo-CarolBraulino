@@ -53,7 +53,7 @@ int main() {
     printf("\n");
     printf("=================================\n");
     printf("\nResumo dos dados:\n");
-        
+    printf("=================================\n");    
     printf("Carta 1: \n");
     printf("Estado: %s\n", Estado1);
     printf("Codigo da Carta: %s\n", CodigoCarta1);
@@ -62,7 +62,7 @@ int main() {
     printf("Area: %.2f km²\n", Area1);
     printf("PIB: %.2f bilhões de reais\n", PIB1);
     printf("Pontos Turisticos: %d\n", PontosTuristicos1);
-
+    printf("=================================\n");
     printf("Carta 2: \n");
     printf("Estado: %s\n", Estado2);
     printf("Codigo da Carta: %s\n", CodigoCarta2);
