@@ -14,6 +14,9 @@ int main() {
     float Area1, Area2;
     float PIB1, PIB2;
     int PontosTuristicos1, PontosTuristicos2;
+    float DensidadePopulacional1, DensidadePopulacional2;
+    float PIBPerCapita1, PIBPerCapita2;
+
     // Entrada de dados para as duas cartas
     printf("Cadastro de Cartas - Super Trunfo\n");
     printf("=================================\n");
@@ -32,6 +35,11 @@ int main() {
     scanf("%f", &PIB1);
     printf("Pontos Turisticos: ");
     scanf("%d", &PontosTuristicos1);
+
+    // Cálculo da densidade populacional e PIB per capita
+    DensidadePopulacional1 = (float) Populacao1 / Area1;
+    PIBPerCapita1 = PIB1 * 1000000000.0 / Populacao1; // PIB em bilhões de reais, convertendo para reais
+
     // Repetindo para a segunda carta
     printf("\n");
     printf("Digite os dados para Carta 2 \n");
@@ -49,6 +57,11 @@ int main() {
     scanf("%f", &PIB2);
     printf("Pontos Turisticos: ");
     scanf("%d", &PontosTuristicos2);
+
+    // Cálculo da densidade populacional e PIB per capita para a segunda carta
+    DensidadePopulacional2 = (float) Populacao2 / Area2;
+    PIBPerCapita2 = PIB2 * 1000000000.0 / Populacao2; // PIB em bilhões de reais, convertendo para reais
+
     // Exibição dos dados cadastrados
     printf("\n");
     printf("=================================\n");
@@ -62,6 +75,8 @@ int main() {
     printf("Area: %.2f km²\n", Area1);
     printf("PIB: %.2f bilhões de reais\n", PIB1);
     printf("Pontos Turisticos: %d\n", PontosTuristicos1);
+    printf("Densidade Populacional: %.2f habitantes/km²\n", DensidadePopulacional1);
+    printf("PIB per Capita: %.2f reais\n", PIBPerCapita1);
     printf("=================================\n");
     printf("Carta 2: \n");
     printf("Estado: %s\n", Estado2);
@@ -71,6 +86,9 @@ int main() {
     printf("Area: %.2f km²\n", Area2);
     printf("PIB: %.2f bilhões de reais\n", PIB2);
     printf("Pontos Turisticos: %d\n", PontosTuristicos2);
+    printf("Densidade Populacional: %.2f habitantes/km²\n", DensidadePopulacional2);
+    printf("PIB per Capita: %.2f reais\n", PIBPerCapita2);
+    printf("=================================\n");
 
     return 0; // Boa prática para indicar que o programa terminou com sucesso.
 }
